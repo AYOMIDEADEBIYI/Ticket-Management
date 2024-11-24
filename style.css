@@ -831,11 +831,19 @@ figcaption h6 {
         width: 300px;
         margin: auto;
         padding: 108px 0 0 0;
-        /* margin: 20px 0; */
     }
     .hero-section {
         height: 720px;
     }
+}
+@media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    .section-title h1 {
+        width: 381px;
+    }
+    
 }
 
 

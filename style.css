@@ -840,6 +840,9 @@ figcaption h6 {
     body {
         overflow-x: hidden;
     }
+    .container {
+        max-width: 400px;
+    }
     .section-title h1 {
         width: 381px;
     }

@@ -628,6 +628,7 @@ figcaption h6 {
 }
 .flex-how-container img {
     height: 58vh;
+    width: 100%;
 }
 .new-event {
     position: absolute;
@@ -780,7 +781,8 @@ figcaption h6 {
         font-weight: 300;
     }
     .hero-text h1 {
-        font-size: 38px;
+        font-size: 43px;
+        line-height: 65px;
     }
     .hero-content{
         padding: 17% 5% 0 5%;
@@ -807,17 +809,13 @@ figcaption h6 {
 }
 @media screen and (max-width: 660px) {
     .hero-section h3 {
-        width: 360px;
-        font-size: 1.4rem;
-        padding-top: 15px;
+        width: 400px;
     }
     .feature-highlights {
         padding-top: 100px;
     }
     .hero-section h1 {
-        line-height: 37.4px;
-        font-size: 1.8rem;
-        padding-top: 50px;
+        line-height: 59.4px;
     }
     .presentation-box {
         position: absolute;
@@ -849,6 +847,64 @@ figcaption h6 {
     }
     .section-title h1 {
         width: 381px;
+        font-size: 1.9rem;
+        font-family: 600;
+    }
+  
+    
+}
+@media screen and (max-width: 644px) {
+    .hero-section h3 {
+        width: 360px;
+        font-size: 1.4rem;
+        padding-top: 15px;
+    }
+.hero-section h1 {
+    line-height: 47px;
+    font-size: 2.2rem;
+    padding-top: 9px;
+    }
+    .main-content p{
+        text-align: center;
+    }
+    .main-content h2 {
+        text-align: center;
+    }
+    .scroll-div {
+        flex-direction: column;
+    }
+    .scroll-div h2 {
+        width: 51%;
+        text-align: center;
+    }
+    .why-content {
+        text-align: center;
+    }
+    .flex-icon {
+        text-align: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .about-box {
+        text-align: center;
+        align-items: baseline;
+        gap: 0;
+    }
+    .marquee img  {
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width: 468px) {
+    .hero-section h1 {
+        font-size: 2rem;
+        padding-top: 18px;
+    }
+  
+}
+@media screen and (max-width: 418px) {
+    .hero-section h1 {
+        padding-top: 50px;
     }
     
 }

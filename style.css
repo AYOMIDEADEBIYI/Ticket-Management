@@ -49,7 +49,7 @@ a {
 }
 
 /*======= HEADER =======*/
-.nav {
+/* .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,8 +181,247 @@ header .log-btn:hover {
         display: block;
     }
 
+
+} */
+
+
+@media(max-width: 991px) {
+.dropdown-content {
+    display: block;
+    z-index: 111;
+} 
+}
+  
+.navbar {
+    width: 91%;
+    margin: auto;
+    position: fixed;
+    top: 21px;
+    left: 59px;
+    border-radius: 13px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .flex-btn {
+    display: flex;
+    gap: 1.7rem;
 }
 
+button {
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+    padding: 16px 25px;
+    border-radius: 4px;
+    border: 1px solid var(--btn-color);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    transition: .2s;
+    box-sizing: border-box;
+}
+button:hover, button:active {
+
+    background-color: transparent;
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+
+header .log-btn {
+    background-color: transparent;
+    color: var(--btn-color);
+    border: none;
+}
+.log-btn:hover {
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+}
+.log-btn {
+    background-color: var(--btn-color);
+    border: none;
+}
+.log-btn:hover {
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+}
+  .logo img {
+    width: 45%
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: black;
+  }
+  
+  /* Navigation Buttons */
+  .nav-buttons .btn {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-buttons .btn.signup {
+    background-color: #ff5722;
+  }
+  
+  .nav-buttons .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .nav-buttons .btn.signup:hover {
+    background-color: var(--primary-color);
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10;  /* Ensure it's above the nav-links */
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+       display: none;
+       position: absolute;
+       background-color: var(--secondary-color);
+       min-width: 159px;
+       height: 30vh;
+       overflow: auto;
+       top: 100%;
+       padding: 12px;
+       text-align: left;
+       left: 0;
+       z-index: 1;
+       border-radius: 5px;
+  }
+  .log {
+    background-color: var(--secondary-color);
+    min-width: 124px;
+    color: black;
+    height: 11vh;
+    padding: 7px;
+
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Sliding Menu for Mobile */
+  @media (max-width: 928px) {
+    .hamburger {
+      display: block;
+    }
+   
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;  /* Hidden off-screen */
+      width: 250px;
+      height: 100vh;
+      background-color:var(--secondary-color);
+      flex-direction: column;
+      align-items: center;
+      padding-top: 155px;
+      transition: right 0.4s ease-in-out;  /* Smooth transition */
+    }
+  
+    .nav-links.show {
+      right: 0;  /* Slide in */
+    }
+  
+    .flex-btn {
+      display: none;
+    }
+
+     .dropdown-menu {
+        position: static;
+        /* display: none; */
+        background-color: var(--primary-color);
+        color: red;
+        height: 48vh;
+        padding: 20px;
+        margin: 0px;
+        width: 100%;
+    
+    }
+    .navr a{
+        color: var(--secondary-color) !important;
+        display: block;
+    }
+  
+    .dropdown.show .dropdown-menu {
+      display: block;
+    }
+  
+    .close-icon {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 2em;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  @media screen and (max-width: 898px) {
+    .navbar {
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        display: flex
+    ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+    
+  }
+  
 /*======= DROPDOWN =======*/
 .dropdown-content {
     display: none;
@@ -766,7 +1005,11 @@ figcaption h6 {
 @media screen and (max-width: 911px) {
     .hero-text h1 {
         font-size: 49px;
+        padding-top: 28px;
     
+       }
+       .logo img {
+        width: 82%;
        }
        .slide {
         flex: 1 0 100%;

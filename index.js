@@ -1,29 +1,19 @@
-// NAVIGATION REPONSIVENESS
-function myBars() {
-    let bars = document.querySelector("#bar");
-    let nav = document.querySelector(".navigation");
-    bars.onclick = function () {
-        if (nav.style.right == "0%") {
-            nav.style.right = "-80%";
-            bars.src = "<i class='bx bx-menu' ></i>";
-        } else {
-            nav.style.right = "0%";
-            bars.src = "<i class='bx bx-x'></i>";
-        }
-        nav.classList.toggle("new");
-    }
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const dropdown = document.querySelector('.dropdown > a');
 
-}
-myBars();
-
-// DROPDOWN
-document.querySelectorAll(".dropbtn").forEach(button => {
-    button.onclick = function (e) {
-        e.preventDefault();
-        let dropdown = this.nextElementSibling;
-        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-    }
+// Toggle navigation menu
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
+
+// Toggle dropdown menu in mobile view
+dropdown.addEventListener('click', (e) => {
+  e.preventDefault();  // Prevent default link behavior
+  const dropdownMenu = dropdown.nextElementSibling;
+  dropdownMenu.classList.toggle('show');
+});
+
 
 
 // SLIDESHOW

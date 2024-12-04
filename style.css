@@ -807,13 +807,17 @@ figcaption h6 {
 }
 @media screen and (max-width: 660px) {
     .hero-section h3 {
-        width: 400px;
+        width: 360px;
+        font-size: 1.4rem;
+        padding-top: 15px;
     }
     .feature-highlights {
         padding-top: 100px;
     }
     .hero-section h1 {
-        line-height: 59.4px;
+        line-height: 37.4px;
+        font-size: 1.8rem;
+        padding-top: 50px;
     }
     .presentation-box {
         position: absolute;
